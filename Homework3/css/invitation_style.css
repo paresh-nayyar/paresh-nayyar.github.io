@@ -83,13 +83,13 @@
 .flower-image{
 	position: relative;
 	float: left;
-	margin-left: 65px;
+	margin-left: 50px;
 }
 
 .people-image{
 	position: relative;
 	float: right;
-	margin-right: 65px;
+	margin-right: 50px;
 }
 
 .flower-image img{
