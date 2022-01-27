@@ -2,6 +2,12 @@
 	margin: 0px;
 }
 
+.main-container{
+	width:1339px;
+	margin: auto;
+
+}
+
 .container{
 	width: 1239px;
 	margin: auto;
@@ -66,12 +72,14 @@
   line-height: 75px;
   color: white;
   height: 800px;
-  width: 1239px;
   position: relative;
 }
 
 .landscape {
   background-image: url('..//images//landscape.png');
+  object-position: fixed;
+  object-fit: cover;
+  width: 1239px;
 }
 
 .image-row{
@@ -178,16 +186,20 @@
   background-repeat: no-repeat;
   background-size: 1139px;
   height: 1400px;
+  margin: 50px;
 }
 
 .banquet {
   background-image: url('..//images//image2.png');
+  object-position: fixed;
+  object-fit: cover;
+  width: 1129px;
 }
 
 .banquet-top-image{
 	position: absolute;
 	top: 5%;
-	right: 10%;
+	right: 8%;
 }
 
 .banquet-top-image img{
@@ -196,9 +208,9 @@
 }
 
 .footer{
+	margin: 50px;
 	display: grid;
 	grid-template-columns: 15% 5% 15% 5% 60%;
-	margin: 50px;
 	padding: 50px 50px 50px 120px;
 	border: 1px #AA9555 solid;
 	font-size: 15px;
