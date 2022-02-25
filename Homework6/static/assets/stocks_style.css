@@ -1,0 +1,144 @@
+.body{
+	margin: 0px;
+}
+
+.main-container{
+	width: 1400px;
+	margin: auto;
+}
+
+.container{
+	width: 1200px;
+	margin: auto;
+}
+
+.fixed-bg {
+	position: relative;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 25px;
+  height: 300px;
+  width: 1200px;
+  padding-top: 30px;
+}
+
+.landscape {
+  background-image: url('..//back.svg');
+  /*object-position: fixed;
+  object-fit: cover;*/
+}
+
+.search{
+	position: absolute;
+	width: 700px;
+	left: 25%;
+	top: 25%;
+}
+
+.search-bar{
+	width: 500px;
+	padding: 15px 25px 15px 20px;
+	border: 1px white solid;
+	float: left;
+	font-size: 15px;
+	box-shadow: 0px 3px #E0E0E0;
+}
+
+.search-bar:focus{
+   	outline:none;
+}
+
+.submit-button{
+	position: relative;
+	float: left;
+	background: white;
+	border: 1px white solid;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	width: 50px;
+  height: 50px;
+  box-shadow: 0px 3px #E0E0E0;
+}
+
+.submit-button:hover{
+	cursor: pointer;
+}
+
+.submit-button img{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	object-fit: cover;
+	filter: invert(82%) sepia(1%) saturate(643%) hue-rotate(314deg) brightness(96%) contrast(98%);
+	top: 35%;
+	left: 30%;
+}
+
+.cross-button{
+	position: relative;
+	float: left;
+	background: white;
+	border: 1px whitesmoke solid;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-left: 2px #E8E8E8 solid;;
+	width: 55px;
+  height: 50px;
+  box-shadow: 0px 3px #E0E0E0;
+}
+
+.cross-button:hover{
+	cursor: pointer;
+}
+
+.cross-button img{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	object-fit: cover;
+	filter: invert(82%) sepia(1%) saturate(643%) hue-rotate(314deg) brightness(96%) contrast(98%);
+	top: 35%;
+	left: 30%;
+}
+
+.navbar {
+  width: 1200px;
+  background: #F8F8F8;  
+}
+
+.navbar button {
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  border: none;
+  background-color: #F8F8F8;
+}
+
+.navbar button:hover {
+  background-color: #D8D8D8;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar button:focus {
+  background-color: #B0B0B0;
+  color: black;
+}
+
+.error_div{
+	border-radius: 20px;
+	background-color: #E0E0E0;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 1px;
+	width: 600px;
+	margin: auto;
+}

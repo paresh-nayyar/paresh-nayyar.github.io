@@ -1,0 +1,11 @@
+runtime: python39
+handlers:
+- url: /.*
+  script: static/stocks.html
+
+- url: /stylesheets
+  static_dir: static/assets
+
+- url: /(.*\.(gif|png|jpg))$
+  static_files: static/\1
+  upload: static/.*\.(gif|png|jpg)$

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/stocks_style.css">
+	<title>FinHub API</title>
+</head>
+<body>
+	<div class="main-container">
+		<div class="container">
+
+			<div class="fixed-bg landscape">
+	    		<span>Stock Search</span>
+	    		<div class="search">
+
+	    			<form id="searchTicker" method="get">
+	    				<button class="submit-button" type="submit" id="submitButton">
+	    					<img src="search-solid.svg">		
+	    				</button>
+						<input type="text" class="search-bar" id="company" placeholder="Enter Stock Ticker Symbol" required>
+					</form>
+
+					<button class="cross-button" id="crossButton" type="submit">
+	    				<img src="times-solid.svg">
+	    			</button>
+
+	    		</div>
+			</div>
+	    	
+	  		<div class="navbar" id="main-navbar" style="display: none;">
+				<button id="tab-1">Company</button>
+				<button id="tab-2">Stock Summary</button>
+				<button id="tab-3">Charts</button>
+				<button id="tab-4">Latest News</button>
+			</div>
+
+			<div class="error_div" id="errorDiv" style="display:none;">
+				<p>Error : No record has been found, please enter a valid symbol</p>
+			</div>
+
+			<div id="outputCompanyInfo" class="content 1" style="padding-top: 30px;">
+				<div id="companyLogo"></div>
+				<div id="companyInfo"></div>
+			</div>
+
+			<div id="outputStockSummary" class="content 2" style="padding-top: 30px; display:none">
+				<div id="stockSummary"></div>
+				<div id="stockRecommendation" style="padding-top: 20px;"></div>
+			</div>
+
+			<div id="outputCharts" class="content 3" style="height: 400px; min-width: 310px; display:none">
+			</div>
+
+			<div id="outputLatestNews" class="content 4" style="padding-top: 30px; display:none;">	
+			</div>
+			
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+	<script src="https://code.highcharts.com/stock/highstock.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+</body>
+</html>
